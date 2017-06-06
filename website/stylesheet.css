@@ -1,0 +1,266 @@
+ body {
+  background-color: #a1c3d1;
+}
+#menub {
+  height: 38px;
+  background-color: #edb5bf;
+  padding: 0px 105px;
+  margin: 0px 0px 15px 0px;
+}
+
+#menub ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+#menub li {
+  display: block;
+  padding: 3px 8px;
+  font-size: 25px;
+  margin: 0px 12px 0px 15px;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+#menub a {
+  text-decoration: none;
+  font-family: Archivo Narrow;
+  font-weight: bold;
+  color: #f0ebf4;
+}
+
+#menub a:hover {
+  color: #4d6d9a;
+}
+#search {
+  margin: 15px 120px 10px 120px;
+}
+input[type=text] {
+    width: 170px;
+    box-sizing: border-box;
+    border: 2px solid #4d6d9a;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
+
+.logo a{
+text-decoration: none;
+color: #4d6d9a;
+}
+
+h1 {
+font-family: Allura;
+text-align: center;
+font-weight: bold;
+font-size: 95px;
+color: #4d6d9a;
+margin: 20px 0px;
+}
+
+img {
+  width: 985px;
+  height: 700px;
+  display: block;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+margin-bottom: 10px;
+}
+
+#bottomb {
+display: block;
+  height: 400px;
+  background-color: #edb5bf;
+text-align: center;
+margin: 70px 0px 0px 0px;
+padding: 30px;
+}
+
+#bottomb li {
+  display: inline;
+  padding: 0px 40px;
+  font-size: 35px;
+text-align: center;
+}
+
+#bottomb ul {
+display: block;
+  margin: 10px 0px 10px 0px;
+}
+
+#bottomb a {
+  text-decoration: none;
+  font-family: Archivo Narrow;
+  font-weight: bold;
+  color: #f0ebf4;
+}
+#bottomb a:hover {
+  color: #4d6d9a;
+}
+
+#bottomb h2 {
+font-family: Allura;
+text-align: center;
+font-weight: bold;
+font-size: 90px;
+color: #4d6d9a;
+margin: 65px 0px 20px 0px;
+}
+
+hr { 
+    display: block;
+margin: 5px 300px 70px 300px;
+    border-style: inset;
+    border-width: 1px;
+border-style: solid;
+border-color: #f0ebf4;
+}
+
+.lineb {
+    display: block;
+margin: 2px 300px 30px 300px;
+    border-style: inset;
+    border-width: 1px;
+border-style: solid;
+border-color: #f0ebf4;
+}
+
+.quote {
+font-family: Farsan;
+color: #f0ebf4;
+text-align: center;
+font-size: 35px;
+font-weight: bold;
+margin: 10px 10px 50px 10px;
+}
+
+.tagline {
+font-family: Farsan;
+color: #f0ebf4;
+text-align: center;
+font-size: 50px;
+font-weight: bold;
+word-spacing: 3px;
+letter-spacing: 1px;
+margin: 45px 0px 10px 0px;
+}
+
+#contacts p{
+font-family: Archivo Narrow;
+font-size: 30px;
+font-weight: normal;
+color: #f0ebf4;
+text-align: center;
+margin: 10px 0px;
+}
+
+#contacts img{
+text-align: center;
+display: block;
+padding: 20px 0px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+margin-bottom: 10px;
+height: 600px;
+width: 850px;
+}
+span.important {
+font-weight: bold;
+}
+
+#menu img{
+position: absolute;
+left: 342px;
+height: 240px;
+width: 370px;
+margin: 10px 10px 40px 0px;
+}
+
+#menu h2{
+font-family: Archivo Narrow;
+color: #f0ebf4;
+text-align: left;
+margin-left: 740px;
+margin-right: 342px;
+margin-top: 0px;
+margin-bottom: 15px;
+font-size: 35px;
+font-style: normal;
+}
+#menu p{
+font-family: Archivo Narrow;
+color: #f0ebf4;
+padding-left: 372px;
+padding-bottom: 0px;
+margin: 0px 332px 0px 362px;
+text-align: left;
+font-size: 23px;
+font-weight: normal;
+}
+#menu ul {
+    list-style-position: outside;
+ list-style-type: circle;
+margin: 15px 342px 5px 362px;
+}
+#menu li{
+font-family: Archivo Narrow;
+color: #f0ebf4;
+margin: 0px 342px 0px 352px;
+text-align: left;
+font-size: 23px;
+font-weight: normal;
+}
+
+#about img {
+height: 550px;
+width: 850px;
+margin: auto;
+margin-bottom: 20px;
+}
+#about p{
+font-family: Archivo Narrow;
+font-size: 30px;
+font-weight: normal;
+color: #f0ebf4;
+text-align: center;
+margin: 40px 342px;
+}
+
+#location img{
+position: absolute;
+left: 342px;
+height: 550px;
+width: 400px;
+margin: 10px 20px 40px 0px;
+}
+
+#location p{
+font-family: Archivo Narrow;
+color: #f0ebf4;
+padding-left: 382px;
+margin: 20px 300px 20px 400px;
+text-align: left;
+font-size: 23px;
+font-weight: normal;
+}
+span.city{
+font-weight: bold;
+}
