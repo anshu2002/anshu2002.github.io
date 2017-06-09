@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cube</title>
+<style>
+.scene {
+  width: 300px;
+  height: 300px;
+  margin: 75px auto 0;
+  perspective: 800px;
+}
+
+.cube {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  transform-style: preserve-3d;
+}
+
+.side {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  padding: 120px 0;
+}
+
+.back {
+  transform: translateZ(-150px);
+  background: linear-gradient(-45deg, red, yellow);
+}
+.top {
+  transform: translateY(-150px) rotateX(90deg);
+  background: linear-gradient(-90deg, red, yellow);
+}
+.bottom {
+  transform: translateY(150px) rotateX(90deg);
+  background: linear-gradient(-90deg, red, yellow);
+}
+.front {
+  transform: translateZ(150px);
+}
+
+</style>
+<body>
+<div class="scene">
+  <div class="cube">
+    <div class="side back"></div>
+    <div class="side top"></div>
+    <div class="side bottom"></div>
+    <div class="side front"></div>
+    <div class="left"></div>
+    <div class="right"></div>
+  </div>
+</div>
+<body>
