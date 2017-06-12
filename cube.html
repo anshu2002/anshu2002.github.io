@@ -1,57 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Cube</title>
+<title>cube</title>
 <style>
-.scene {
-  width: 300px;
-  height: 300px;
-  margin: 75px auto 0;
-  perspective: 800px;
+.wrap {
+	perspective: 800px;
+	perspective-origin: 50% 100px;
+}
+.cube {
+	position: relative;
+	width: 200px;
+	transform-style: preserve-3d;
+    margin: 300px;
+}
+.cube div {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+}
+.back {
+	transform: translateZ(-100px) rotateY(180deg);
+    background: linear-gradient(to right, hotpink, mediumseagreen);
+    border: 4px solid black;
+}
+.right {
+	transform: rotateY(-270deg) translateX(100px);
+	transform-origin: top right;
+    border: 4px solid black;
+    border-left: none;
+    background: linear-gradient(to right, cornflowerblue, hotpink);
+}
+.left {
+	transform: rotateY(270deg) translateX(-100px);
+	transform-origin: center left;
+    border: 4px solid black;
+    border-left: none;
+    border-right: none;
+    background: linear-gradient(to right, mediumseagreen, khaki);
+}
+.top {
+	transform: rotateX(-90deg) translateY(-100px);
+	transform-origin: top center;
+    border: 4px solid black;
+    border-top: none;
+    border-bottom: none;
+    background: black;
+}
+.bottom {
+	transform: rotateX(90deg) translateY(100px);
+	transform-origin: bottom center;
+    border: 4px solid black;
+    border-top: none;
+    background: black;
+}
+.front {
+	transform: translateZ(100px);
+    border: 4px solid black;
+    background: linear-gradient(to right, khaki, cornflowerblue);
+}
+@keyframes spin {
+	from { transform: rotateY(0); }
+	to { transform: rotateY(360deg); }
 }
 
 .cube {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  transform-style: preserve-3d;
+	animation: spin 5s infinite linear;
 }
-
-.side {
-  position: absolute;
-  width: 300px;
-  height: 300px;
-  box-sizing: border-box;
-  border: 2px solid black;
-  padding: 120px 0;
-}
-
-.back {
-  transform: translateZ(-150px);
-  background: linear-gradient(-45deg, red, yellow);
-}
-.top {
-  transform: translateY(-150px) rotateX(90deg);
-  background: linear-gradient(-90deg, red, yellow);
-}
-.bottom {
-  transform: translateY(150px) rotateX(90deg);
-  background: linear-gradient(-90deg, red, yellow);
-}
-.front {
-  transform: translateZ(150px);
-}
-
 </style>
+</head>
 <body>
-<div class="scene">
-  <div class="cube">
-    <div class="side back"></div>
-    <div class="side top"></div>
-    <div class="side bottom"></div>
-    <div class="side front"></div>
-    <div class="left"></div>
-    <div class="right"></div>
-  </div>
-</div>
-<body>
+<div class="wrap">
+	<div class="cube">
+		<div class="front"></div>
+		<div class="back"></div>
+		<div class="top"></div>
+		<div class="bottom"></div>
+		<div class="left"></div>
+		<div class="right"></div>
+	</div>
+</div
+</body>
+</html>
